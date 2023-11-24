@@ -1,0 +1,249 @@
+/* Updated custom styles */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+
+#invoice {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+#invoice h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table td {
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+#totalAmount {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  padding: 10px;
+  background-color: #f3725b; 
+  color: #333;
+  border-radius: 6px;
+}
+
+
+#smoothieImage {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #f3725b;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff6c4f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  appearance: none;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  outline: none;
+  vertical-align: middle;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: #f3725b;
+  border-color: #f3725b;
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  box-shadow: 0 0 4px #f3725b;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+select option {
+  padding: 10px;
+}
+
+.container {
+  background-color: #fff;
+}
+
+/* Additional styling to make the form visually attractive */
+.smoothie-image {
+  text-align: center;
+}
+
+.smoothie-image img {
+  max-width: 100%;
+  max-height: 180px;
+  border-radius: 6px;
+}
+
+.smoothie-selection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.smoothie-selection label {
+  flex: 1 1 200px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.smoothie-selection label:hover {
+  background-color: #f2f2f2;
+}
+
+.smoothie-selection input[type="radio"] {
+  display: none;
+}
+
+.smoothie-selection input[type="radio"]:checked + label {
+  background-color: #f3725b;
+  color: #fff;
+  border-color: #f3725b;
+}
+
+.top-ups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.top-ups label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.top-ups label:hover {
+  background-color: #f2f2f2;
+}
+
+.top-ups input[type="checkbox"] {
+  display: none;
+}
+
+.top-ups input[type="checkbox"]:checked + label {
+  background-color: #f3725b;
+  color: #fff;
+  border-color: #f3725b;
+}
+
+.total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: right;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #f3725b;
+}
+
+.total-amount::before {
+  content: "Total: ";
+  font-weight: normal;
+  color: #333;
+}
+
+
+/* End of custom styles */

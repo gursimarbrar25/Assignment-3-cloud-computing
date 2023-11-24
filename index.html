@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoothie Order Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Smoothie Order Form</h1>
+    <form id="smoothieForm">
+      <label for="smoothieSelect">Select Smoothie:</label>
+      <select id="smoothieSelect" name="smoothie">
+        <option value="strawberryBanana">Strawberry Banana</option>
+        <option value="Raspberry">Raspberry</option>
+        <option value="Peach">Peach</option>
+        <option value="mangoPineapple">Mango Pineapple</option>
+        <!-- Add more smoothie options here -->
+      </select>
+
+      <label for="size">Size:</label>
+      <input type="radio" id="small" name="size" value="small" checked>
+      <label for="small">Small</label>
+      <input type="radio" id="medium" name="size" value="medium">
+      <label for="medium">Medium</label>
+      <input type="radio" id="large" name="size" value="large">
+      <label for="large">Large</label>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+
+      <fieldset>
+        <legend>Top Ups:</legend>
+        <div>
+          <div>
+            <input type="checkbox" id="Whipcream" name="topUps" value="Whipcream">
+            <label for="Whipcream">Whipcream (+$0.99)</label>
+          </div>
+          <input type="checkbox" id="chocolateChips" name="topUps" value="chocolateChips">
+          <label for="chocolateChips">Chocolate Chips (+$0.75)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="protein" name="topUps" value="protein">
+          <label for="protein">Protein (+$1.50)</label>
+        </div>
+        <!-- Add more top-up options here -->
+      </fieldset>
+
+      <button type="button" id="orderButton">Order</button>
+    </form>
+
+    <div id="invoice" class="hidden">
+      <h2>Smoothie Order Invoice</h2>
+      <table>
+        <tr>
+          <td>Item</td>
+          <td>Quantity</td>
+          <td>Unit Price</td>
+        </tr>
+        <tr>
+          <td id="smoothieName"></td>
+          <td id="quantityRow"></td>
+          <td id="unitPrice"></td>
+        </tr>
+        <tr>
+          
+        </tr>
+        <tbody id="topUpsList">
+          <!-- Top-ups will be dynamically added here -->
+        </tbody>
+        <tr>
+          <td colspan="2">Total:</td>
+          <td id="totalAmount"></td>
+        </tr>
+      </table>
+      <p id="greeting"></p>
+      <img id="smoothieImage" src="" alt="Smoothie Image">
+    </div>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
